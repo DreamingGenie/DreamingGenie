@@ -2,7 +2,7 @@
 <div align="center">
 
   <!-- Capsule Header -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=제%20깃허브에%20오신%20걸%20환영합니다.&animation=fadeIn&fontColor=000000&fontSize=50" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=제%20깃허브에%20오신%20걸%20환영합니다.&animation=fadeIn&fontColor=000000&fontSize=30" />
 
   <!-- Name -->
   <h2 style="
