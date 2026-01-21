@@ -2,10 +2,17 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=제%20깃허브에%20오신%20걸%20환영합니다.&animation=fadeIn&fontColor=000000&fontSize=50" />
 </div>
 <div align="center">
-  <p style="font-size: 18px; font-weight: 600; color: #282d33; margin-top: 10px;">
-    안녕하세요, <strong>전진</strong>입니다 👋
-  </p>
+  <h2 style="
+    font-weight: 700;
+    font-size: 26px;
+    color: #282d33;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  ">
+    안녕하세요, 전진입니다 👋
+  </h2>
 </div>
+
 
 ---
 
