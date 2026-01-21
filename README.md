@@ -3,15 +3,16 @@
 </div>
 <div align="center">
   <h2 style="
-    font-weight: 700;
-    font-size: 26px;
-    color: #282d33;
-    margin-top: 20px;
-    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #444;
+    margin-top: 24px;
+    margin-bottom: 6px;
   ">
-    안녕하세요, 전진입니다 👋
+    👋 안녕하세요, 전진입니다
   </h2>
 </div>
+
 
 
 ---
