@@ -1,6 +1,11 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=제%20깃허브에%20오신%20걸%20환영합니다.&animation=fadeIn&fontColor=000000&fontSize=50" />
 </div>
+<div align="center">
+  <p style="font-size: 18px; font-weight: 600; color: #282d33; margin-top: 10px;">
+    안녕하세요, <strong>전진</strong>입니다 👋
+  </p>
+</div>
 
 ---
 
@@ -56,6 +61,51 @@ AI 시대에 맞는 백엔드 시스템을 설계하고 구현하는 개발자�
 <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white">
 
 ---
+<h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">
+📊 Algorithm (Baekjoon)
+</h2>
+
+<div align="center">
+  <a href="https://solved.ac/yusengha">
+    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yusengha" />
+  </a>
+</div>
+
+---
+<h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">
+📌 Projects
+</h2>
+
+<p style="color: #555;">
+현재는 학습 및 역량 강화를 중심으로 준비 중이며,<br/>
+백엔드 및 AI 기반 프로젝트를 순차적으로 추가할 예정입니다.
+</p>
+
+<!-- Project Template -->
+<div style="border: 1px solid #eaeaea; border-radius: 8px; padding: 12px; margin-top: 10px;">
+  <h4>🚀 Project Title (예정)</h4>
+  <p style="font-size: 14px; color: #444;">
+    • Description: 프로젝트 한 줄 요약<br/>
+    • Tech Stack: Spring Boot, AWS, AI/ML 등<br/>
+    • Role: Backend / AI Integration<br/>
+    • Status: Planned
+  </p>
+</div>
+---
+<h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">
+💼 Experience
+</h2>
+
+<ul style="color: #444; font-size: 14px;">
+  <li>
+    <strong>Backend & AI Developer (Preparation)</strong><br/>
+    • Spring Boot 기반 백엔드 학습 및 API 설계 경험<br/>
+    • AI/ML 모델 학습 및 서비스 연계 구조 학습<br/>
+    • GitHub Actions 기반 CI/CD 파이프라인 학습
+  </li>
+</ul>
+
+---
 
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">
 📬 Contact
@@ -80,6 +130,7 @@ AI 시대에 맞는 백엔드 시스템을 설계하고 구현하는 개발자�
 
 </a>
 
+---
 ---
 
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">
