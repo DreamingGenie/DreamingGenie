@@ -37,3 +37,4 @@
            /> </div> 
     </div>
     
+![jin's GitHub stats](https://github-readme-stats.vercel.app/api?username=DreamingGenie&show_icons=true&theme=radical)    
