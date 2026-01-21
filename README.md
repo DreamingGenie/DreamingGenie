@@ -39,6 +39,7 @@ AI 시대에 맞는 백엔드 시스템을 설계하고 구현하는 개발자�
 <p><strong>AI / Data</strong></p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white">
+<img src="https://img.shields.io/badge/Hugging%20Face-FF9900?style=flat-square&logo=Hugging%20Face&logoColor=white">
 
 <br/><br/>
 <p><strong>Frontend / Collaboration</strong></p>
@@ -55,13 +56,22 @@ AI 시대에 맞는 백엔드 시스템을 설계하고 구현하는 개발자�
 </h2>
 
 <a href="mailto:dreaminggenie0704@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=Gmail&logoColor=white">
+  <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white">
+</a>
+
+<a href="mailto:dreaminggenie@naver.com">
+  <img src="https://img.shields.io/badge/Naver Mail-03C75A?style=flat-square&logo=naver&logoColor=white">
+</a>
+
+<a href="https://discord.com/users/jini0704">
+  <img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white">
 </a>
 
 <br/><br/>
 
 <a href="https://hits.seeyoufarm.com">
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FDreamingGenie%2F&count_bg=%23000000&title_bg=%23000000&icon=github.svg&icon_color=%23FFFFFF&title=GitHub&edge_flat=false"/>
+  <img src="https://komarev.com/ghpvc/?username=DreamingGenie&style=flat-square" />
+
 </a>
 
 ---
