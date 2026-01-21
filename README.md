@@ -1,37 +1,44 @@
+<!-- HERO SECTION -->
 <div align="center">
+
+  <!-- Capsule Header -->
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&text=제%20깃허브에%20오신%20걸%20환영합니다.&animation=fadeIn&fontColor=000000&fontSize=50" />
-</div>
-<div align="center">
+
+  <!-- Name -->
   <h2 style="
-    font-weight: 600;
-    font-size: 24px;
-    color: #444;
     margin-top: 24px;
     margin-bottom: 6px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #282d33;
   ">
     👋 안녕하세요, 전진입니다
   </h2>
+
+  <!-- Role -->
+  <h3 style="
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #555;
+  ">
+    🚀 AI-Powered Backend Developer
+  </h3>
+
+  <!-- One-liner -->
+  <p style="
+    max-width: 720px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+  ">
+    AI의 동작 원리와 한계를 이해하고,<br/>
+    이를 백엔드 아키텍처에 전략적으로 녹여내는 개발자를 지향합니다.
+  </p>
+
 </div>
 
-
-
----
-
-<h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">
-🚀 AI-Powered Backend Developer
-</h2>
-
-<p style="font-size: 15px; color: #282d33; line-height: 1.6;">
-AI 시대에 맞는 백엔드 시스템을 설계하고 구현하는 개발자를 지향합니다.<br/>
-단순히 AI를 사용하는 개발자가 아니라,
-<strong>AI의 동작 원리와 한계를 이해하고 이를 백엔드 아키텍처에 전략적으로 녹여내는 개발자</strong>를 목표로 합니다.
-</p>
-
-<p style="font-size: 14px; color: #444;">
-• Backend 중심의 시스템 설계 경험<br/>
-• AI/ML 모델을 서비스 레벨에서 활용하는 구조에 관심<br/>
-• 자동화, 확장성, 안정성을 고려한 서버 개발 지향
-</p>
 
 ---
 
