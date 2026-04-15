@@ -50,11 +50,12 @@
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">
 📊 Algorithm (Solved.ac)
 </h2>
-<img width="357" height="180" alt="image" src="https://github.com/user-attachments/assets/b539c062-9c97-40b1-a896-2e936eda5dac" />
+
 
 <div align="center">
   <a href="https://solved.ac/yusengha">
     <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=yusengha" />
+    <img width="357" height="180" alt="image" src="https://github.com/user-attachments/assets/b539c062-9c97-40b1-a896-2e936eda5dac" />
   </a>
   <p>지속적인 문제 해결을 통해 효율적인 로직 설계 능력을 기르고 있습니다.</p>
 </div>
