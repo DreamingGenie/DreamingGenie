@@ -50,6 +50,7 @@
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">
 📊 Algorithm (Solved.ac)
 </h2>
+<img width="357" height="180" alt="image" src="https://github.com/user-attachments/assets/b539c062-9c97-40b1-a896-2e936eda5dac" />
 
 <div align="center">
   <a href="https://solved.ac/yusengha">
