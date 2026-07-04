@@ -91,9 +91,9 @@
 <div style="border: 1px solid #eaeaea; border-radius: 8px; padding: 16px; margin-top: 10px;">
   <h4>🧭 <a href="https://github.com/DreamingGenie/TripCraft">TripCraft — 국내 여행 일정 플래너 (SSAFY 캡스톤 · 2인 팀)</a></h4>
   <p style="font-size: 14px; color: #444;">
-    • <b>핵심:</b> 외부 API 4종(TourAPI·ODsay·T Map·Kakao)을 통합한 멀티모달 이동시간 자동 계산 + WebSocket(STOMP) 기반 실시간 협업 동시성 제어<br/>
-    • <b>Tech:</b> Java, Spring Boot, Spring Security(JWT), MyBatis, Vue 3, MySQL, WebSocket, Spring AI, Docker<br/>
-    • <b>역할:</b> 백엔드 핵심 도메인(회원·관광지·일정)과 외부 API 연동 담당
+    • <b>핵심:</b> WebSocket(STOMP) 기반 <b>실시간 공동 편집</b> 구현 — 낙관적 락·서버 권한 부여·커서 동기화 등 동시성 제어<br/>
+    • <b>Tech:</b> Java, Spring Boot, MyBatis, WebSocket(STOMP), Vue 3, MySQL, Docker<br/>
+    • <b>역할:</b> 실시간 협업 · 커뮤니티 게시판(CRUD·댓글·이미지) · 마이페이지/방문지도 · 회원 프로필 관리 담당
   </p>
 </div>
 
