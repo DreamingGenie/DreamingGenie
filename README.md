@@ -7,15 +7,28 @@
   </h2>
 
   <h3 style="margin-top: 0; margin-bottom: 18px; font-size: 20px; font-weight: 600; color: #555;">
-    🚀 AI-Powered Backend Developer | DX Engineer
+    🚀 Backend Developer · 만드는 것에서 끝내지 않는
   </h3>
 
   <p style="max-width: 720px; font-size: 15px; line-height: 1.6; color: #444;">
-    AI의 동작 원리와 데이터의 흐름을 깊이 있게 이해하고,<br/>
-    이를 <b>안정적인 백엔드 아키텍처</b>에 전략적으로 녹여내어 비즈니스 가치를 창출합니다.
+    기능 구현에서 멈추지 않고 <b>배포·운영·문서화까지 스스로 마무리</b>합니다.<br/>
+    <b>SQLD·DB 설계 경험</b>을 바탕으로 데이터 구조부터 탄탄하게 설계하고, 필요할 땐 <b>프론트엔드(Vue)</b>도 직접 다룹니다.
   </p>
 
 </div>
+
+---
+
+<h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">
+💡 How I Work
+</h2>
+
+<ul style="color: #444; font-size: 14px; line-height: 1.8;">
+  <li>🧩 만든 뒤 <b>배포·운영까지 스스로 마무리</b>합니다 (Docker · CI/CD)</li>
+  <li>📝 아키텍처·API·회고를 <b>문서로 남기고, 커밋 컨벤션</b>을 지킵니다</li>
+  <li>🔍 문제는 증상보다 <b>원인부터</b> — 실시간 협업 동시성·성능 이슈를 근본 원인에서 해결합니다</li>
+  <li>🤝 리더·팔로워 모두 소화하고, <b>이슈는 빠르게 공유</b>하는 편입니다</li>
+</ul>
 
 ---
 
@@ -26,17 +39,27 @@
 <p><strong>Backend / Infrastructure</strong></p>
 <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white">
 <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white">
+<img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white">
+<img src="https://img.shields.io/badge/MyBatis-C74634?style=flat-square">
+<img src="https://img.shields.io/badge/JPA-59666C?style=flat-square">
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white">
 <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white">
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
 <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
+<img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white">
 
 <br/><br/>
-<p><strong>AI / Data Engineering</strong></p>
+<p><strong>Frontend</strong></p>
+<img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white">
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white">
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
+
+<br/><br/>
+<p><strong>AI / Data</strong></p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white">
 <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white">
-<img src="https://img.shields.io/badge/Hugging%20Face-FF9900?style=flat-square&logo=HuggingFace&logoColor=white">
 
 <br/><br/>
 <p><strong>Certifications & Collaboration</strong></p>
@@ -66,11 +89,20 @@
 </h2>
 
 <div style="border: 1px solid #eaeaea; border-radius: 8px; padding: 16px; margin-top: 10px;">
-  <h4>🚀 <a href="https://github.com/DreamingGenie/jin-GuestBook">jin-GuestBook: CI/CD & Cloud Deployment</a></h4>
+  <h4>🧭 <a href="https://github.com/DreamingGenie/TripCraft">TripCraft — 국내 여행 일정 플래너 (SSAFY 캡스톤 · 2인 팀)</a></h4>
+  <p style="font-size: 14px; color: #444;">
+    • <b>핵심:</b> 외부 API 4종(TourAPI·ODsay·T Map·Kakao)을 통합한 멀티모달 이동시간 자동 계산 + WebSocket(STOMP) 기반 실시간 협업 동시성 제어<br/>
+    • <b>Tech:</b> Java, Spring Boot, Spring Security(JWT), MyBatis, Vue 3, MySQL, WebSocket, Spring AI, Docker<br/>
+    • <b>역할:</b> 백엔드 핵심 도메인(회원·관광지·일정)과 외부 API 연동 담당
+  </p>
+</div>
+
+<div style="border: 1px solid #eaeaea; border-radius: 8px; padding: 16px; margin-top: 10px;">
+  <h4>🚀 <a href="https://github.com/DreamingGenie/jin-GuestBook">jin-GuestBook — CI/CD & Cloud Deployment (개인)</a></h4>
   <p style="font-size: 14px; color: #444;">
     • <b>핵심:</b> Docker와 GitHub Actions를 활용한 배포 자동화 파이프라인 구축<br/>
     • <b>Tech:</b> Spring Boot, Next.js, Docker, AWS EC2, GitHub Actions<br/>
-    • <b>성과:</b> 환경 변수 보안 관리(Secrets) 및 CORS 이슈 해결을 통한 안정적 배포 완주
+    • <b>성과:</b> 환경 변수 보안 관리(Secrets) 및 CORS 이슈 해결을 통한 로컬→Docker→EC2 배포 완주
   </p>
 </div>
 
