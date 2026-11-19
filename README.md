@@ -54,14 +54,13 @@ SSAFY 15기 Java 트랙 · 2026 하반기 신입 백엔드 지원 중
 
 ### 팀 프로젝트 — 교육기관 GitLab에서 개발해 GitHub로 옮긴 저장소
 
-- **[CoMeetTool](https://github.com/DreamingGenie/Comeettool)** (7명, 27일) — AI 회의 도우미. 팀 합의로 PM 겸 통합 담당을 맡아 develop에 합친 109건 중 86건과 main 머지 10건 전부(그중 배포 9건)를 처리했고, 팀 공간·일정 기능과 공통 응답 틀을 만들었습니다.
+- **[CoMeetTool](https://github.com/DreamingGenie/Comeettool)** (7명, 27일) — AI 회의 도우미. 팀 합의로 PM 겸 통합 담당을 맡아 develop에 합친 95건 중 83건과 main 머지 10건 전부(그중 배포 9건)를 처리했고, 팀 공간·일정 기능과 공통 응답 틀을 만들었습니다.
 - **[Pickage](https://github.com/DreamingGenie/Pickage)** (6명, 2026.08 ~ 10, 운영 종료) — npm 패키지 후보를 생태계 변화·기능·커뮤니티 세 관점으로 비교하는 서비스. 개인 결제 계정으로 500TB가 넘는 BigQuery 데이터를 다뤄야 해서, 상한을 넘으면 멈추는 수집기를 만들었습니다. 236번 실행해 보니 예상과 실제 청구량 차이가 0.1%였습니다.
 
 ---
 
 ## 학습 기록
 
-- **[jin-GuestBook](https://github.com/DreamingGenie/jin-GuestBook)** — 방명록 하나로 Docker·GitHub Actions·EC2를 처음 다뤄 본 7일(2025-12)입니다. 그때 막혔던 곳이 실패한 CI 로그와 함께 그대로 남아 있습니다.
 - **[BJ](https://github.com/DreamingGenie/BJ)** — 백준 풀이 모음입니다.
 
 ---
