@@ -2,10 +2,12 @@
 
 # 전진 · Backend
 
-동시 편집 충돌을 막는 락 설계와,<br/>
-비용 상한을 넘으면 멈추는 데이터 수집기를 만들었습니다.
+동시 편집 충돌을 막는 락 설계와 비용 상한을 넘으면 멈추는 데이터 수집기를 만들었고,<br/>
+6명 팀 서비스의 배포·관측·백업을 맡았습니다.
 
 SSAFY 15기 Java 트랙 · 2026 하반기 신입 백엔드 지원 중
+
+**[포트폴리오 · dreaminggenie.github.io](https://dreaminggenie.github.io)**
 
 </div>
 
@@ -17,6 +19,7 @@ SSAFY 15기 Java 트랙 · 2026 하반기 신입 백엔드 지원 중
 - **검증 범위 (TripCraft)** — 락은 적용했지만 실제 동시 요청으로는 검증하지 못해, 아래 프로젝트 소개에 한계로 적어 두었습니다.
 - **집계 재현 (Pickage)** — 같은 집계를 다시 돌리자 14건이 달랐습니다. 발행 시각이 같은 릴리스끼리 순서가 실행마다 바뀌는 것이 원인이어서, 정렬 규칙을 하나 더하고 문서 숫자를 고쳤습니다.
 - **설정으로 막은 실수 (CoMeetTool · Pickage)** — CoMeetTool은 기본 브랜치를 `develop`으로 바꿨고, Pickage는 비밀번호가 든 `.env.*` 파일 전체를 저장소에서 막았습니다(`.example`만 허용).
+- **복원까지 확인 (BEEZ)** — 매일 백업을 만든 뒤, 서버 백업을 받아 임시 컨테이너에 복원하고 문서 4건의 파일 해시가 DB에 저장된 값과 같은지 확인했습니다.
 - **AI 활용** — 무엇을 만들지 정하고 설계하고 결과를 검증하는 일은 제가 하고, 구현은 AI와 함께 합니다.
 
 ---
@@ -52,10 +55,11 @@ SSAFY 15기 Java 트랙 · 2026 하반기 신입 백엔드 지원 중
 - 초가 바뀌는 순간, 그 앞뒤 요청의 중간 시점을 서버의 초 경계로 봅니다.
 - 여러 번 클릭할 때는 처음 정한 목표 시각을 기준으로 계산해 오차가 쌓이지 않습니다.
 
-### 팀 프로젝트 — 교육기관 GitLab에서 개발해 GitHub로 옮긴 저장소
+### 팀 프로젝트
 
-- **[CoMeetTool](https://github.com/DreamingGenie/Comeettool)** (7명, 27일) — AI 회의 도우미. 팀 합의로 PM 겸 통합 담당을 맡아 develop에 합친 95건 중 83건과 main 머지 10건 전부(그중 배포 9건)를 처리했고, 팀 공간·일정 기능과 공통 응답 틀을 만들었습니다.
-- **[Pickage](https://github.com/DreamingGenie/Pickage)** (6명, 2026.08 ~ 10, 운영 종료) — npm 패키지 후보를 생태계 변화·기능·커뮤니티 세 관점으로 비교하는 서비스. 개인 결제 계정으로 500TB가 넘는 BigQuery 데이터를 다뤄야 해서, 상한을 넘으면 멈추는 수집기를 만들었습니다. 236번 실행해 보니 예상과 실제 청구량 차이가 0.1%였습니다.
+- **[BEEZ](https://github.com/S15A108/BEEZ)** (6명, 2026.10 ~ 11) — 팀원이 각자 AI 코딩 에이전트로 개발해도 팀이 승인한 설계를 기준으로 일하게 돕는 협업 서비스. 서버 운영(PR 필수 검사·dev 자동 배포·관측·백업)과 계정·팀 API, 에이전트가 들어오는 MCP 진입점을 맡았고, 팀원 PR 103개를 리뷰했습니다.
+- **[CoMeetTool](https://github.com/DreamingGenie/Comeettool)** (7명, 27일, 교육기관 GitLab에서 개발해 옮긴 저장소) — AI 회의 도우미. 팀 합의로 PM 겸 통합 담당을 맡아 develop에 합친 95건 중 83건과 main 머지 10건 전부(그중 배포 9건)를 처리했고, 팀 공간·일정 기능과 공통 응답 틀을 만들었습니다.
+- **[Pickage](https://github.com/DreamingGenie/Pickage)** (6명, 2026.08 ~ 10, 운영 종료, 교육기관 GitLab에서 개발해 옮긴 저장소) — npm 패키지 후보를 생태계 변화·기능·커뮤니티 세 관점으로 비교하는 서비스. 개인 결제 계정으로 500TB가 넘는 BigQuery 데이터를 다뤄야 해서, 상한을 넘으면 멈추는 수집기를 만들었습니다. 236번 실행해 보니 예상과 실제 청구량 차이가 0.1%였습니다.
 
 ---
 
@@ -83,11 +87,19 @@ SSAFY 15기 Java 트랙 · 2026 하반기 신입 백엔드 지원 중
 ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
 ![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white)
 
+**Infra**
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
+![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+
 **Frontend · 기타**
 
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 ---
