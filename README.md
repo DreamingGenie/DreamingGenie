@@ -11,115 +11,95 @@ SSAFY 15기 Java 트랙 · 2026 하반기 신입 백엔드 지원 중
 
 </div>
 
----
+## 프로젝트
+
+### [BEEZ](https://github.com/S15A108/BEEZ) · 6명 팀 · 2026.10 ~ 11
+
+팀원마다 AI 코딩 에이전트로 개발해도 모두 같은 승인 설계를 기준으로 일하게 돕는 협업 서비스
+
+- **맡은 일** 서버 운영(PR 필수 검사·dev 자동 배포·관측·백업), 계정·팀 API, 에이전트가 들어오는 MCP 진입점. 팀원 PR 103개 리뷰
+- **대표 사례** 시간 제한에 끊기던 AI 문서 검토를 요청 밖 워커로 옮겼습니다
+
+`Java 21` `Spring Boot 4.1` `PostgreSQL` `MCP Java SDK` `GitHub Actions` `Jenkins`
+
+### [CoMeetTool](https://github.com/DreamingGenie/Comeettool) · 7명 팀 · 2026.07 ~ 08 (27일) · 교육기관 GitLab에서 이관
+
+음성 회의를 기록·요약하고 팀 공간과 일정을 함께 관리하는 협업 도구
+
+- **맡은 일** 팀 합의로 PM 겸 통합 담당. main 머지 10건 전부(그중 배포 9건), 팀 공간·일정 기능과 공통 응답 틀
+- **대표 사례** develop 브랜치 머지 95건 중 83건을 검토하고 머지했습니다
+
+`Java 21` `Spring Boot 4.1` `Spring Data JPA` `PostgreSQL`
+
+### [TripCraft](https://github.com/DreamingGenie/TripCraft) · 2인 캡스톤 → 혼자 추가 개발 · 2026.05 ~ 11
+
+여러 명이 함께 짜는 국내 여행 일정 플래너
+
+- **맡은 일** 동시 편집 충돌 방지, 실시간 협업, 커뮤니티 게시판
+- **대표 사례** 낙관적 락이 못 잡는 일정 겹침을 여행 단위 락으로 막고, 실 DB 테스트로 찾은 격리수준 결함을 고쳤습니다
+
+`Java 21` `Spring Boot 3.5` `MyBatis` `MySQL 8` `WebSocket/STOMP` `Vue 3`
+
+### [Pickage](https://github.com/DreamingGenie/Pickage) · 6명 팀 · 2026.08 ~ 10 · 운영 종료 · 교육기관 GitLab에서 이관
+
+npm 패키지 후보 최대 3개를 생태계 변화·기능·커뮤니티 세 관점으로 비교하는 서비스
+
+- **맡은 일** 원본 데이터 수집과 생태계 지표 계산. 개인 결제 계정으로 500TB가 넘는 BigQuery 데이터를 다뤄야 해서, 상한을 넘으면 멈추는 수집기를 만들었습니다
+- **대표 사례** BigQuery 236번 실행에서 예상 사용량과 청구 사용량 차이가 0.1%였습니다
+
+`Python` `BigQuery` `GCS` `DuckDB` `MinIO`
+
+### [블록 배틀](https://github.com/DreamingGenie/BlockBattle) · 1명 · 2026.11 · 서버 내림
+
+BEEZ의 개발 절차로 만들어 AWS에 배포하고 실사용자를 받은 블록 낙하 퍼즐 대전 게임
+
+- **맡은 일** 실증 범위와 지표를 정하고, 배포 뒤 운영을 판단했습니다. 코드는 AI 코딩 에이전트 세션이 썼습니다
+- **대표 사례** 빠른 정상 이용자를 잡지 않게 기준을 세워, 랭킹 1위를 차지한 콘솔 봇을 랭킹에서 뺐습니다
+
+`Java 21` `Spring Boot 3.5` `MySQL 8.4` `Redis 7.4` `React 19` `k6`
+
+## 개인 작업
+
+### [tichu-trainer](https://github.com/DreamingGenie/tichu-trainer) · [바로 해 보기](https://dreaminggenie.github.io/tichu-trainer/)
+
+보드게임 티츄의 규칙을 직접 카드를 내 보며 익히는 학습 웹입니다. 규칙 판정 코드를 화면에서 떼어 내, 설치 없이 `node tests/run.js` 한 줄로 테스트 85개를 돌립니다.
+
+`바닐라 JS(ES 모듈)` `빌드 없음` `외부 라이브러리 0`
+
+### [ServerTimeClicker](https://github.com/DreamingGenie/ServerTimeClicker)
+
+서버가 초 단위로만 알려 주는 시각을 밀리초 단위까지 좁혀, 정해 둔 위치를 순서대로 클릭하는 데스크톱 앱입니다. 초가 바뀌는 순간 그 앞뒤 요청의 중간 시점을 서버의 초 경계로 봅니다.
+
+`Java 21` `JavaFX` `jpackage`
 
 ## 일하는 방식
 
-- **충돌 기준 (TripCraft)** — 서버가 이동시간을 다시 계산해 저장할 때도 버전이 오르면 다른 사람이 일정을 고치지 않았는데도 사용자에게 충돌이 뜹니다. 그래서 이 UPDATE는 버전을 건드리지 않게 따로 나눴습니다.
-- **검증 범위 (TripCraft)** — 락은 적용했지만 실제 동시 요청으로는 검증하지 못해, 아래 프로젝트 소개에 한계로 적어 두었습니다.
+- **충돌 기준 (TripCraft)** — 서버가 이동시간을 다시 계산해 저장할 때도 버전이 오르면, 다른 사람이 일정을 고치지 않았는데도 사용자에게 충돌이 뜹니다. 그래서 이 UPDATE는 버전을 건드리지 않게 따로 나눴습니다.
+- **검증 범위 (TripCraft)** — 캡스톤 때는 동시 요청 테스트가 없었습니다. 나중에 실제 MySQL로 붙여 보니 겹치는 일정이 둘 다 저장돼, 격리수준을 고치고 그 테스트를 남겼습니다.
 - **집계 재현 (Pickage)** — 같은 집계를 다시 돌리자 14건이 달랐습니다. 발행 시각이 같은 릴리스끼리 순서가 실행마다 바뀌는 것이 원인이어서, 정렬 규칙을 하나 더하고 문서 숫자를 고쳤습니다.
 - **설정으로 막은 실수 (CoMeetTool · Pickage)** — CoMeetTool은 기본 브랜치를 `develop`으로 바꿨고, Pickage는 비밀번호가 든 `.env.*` 파일 전체를 저장소에서 막았습니다(`.example`만 허용).
 - **복원까지 확인 (BEEZ)** — 매일 백업을 만든 뒤, 서버 백업을 받아 임시 컨테이너에 복원하고 문서 4건의 파일 해시가 DB에 저장된 값과 같은지 확인했습니다.
 - **AI 활용** — 무엇을 만들지 정하고 설계하고 결과를 검증하는 일은 제가 하고, 구현은 AI와 함께 합니다.
 
----
+## 기술
 
-## Key Projects
-
-### [TripCraft](https://github.com/DreamingGenie/TripCraft) — 여러 명이 함께 짜는 국내 여행 일정 플래너
-
-`Java 21` `Spring Boot` `MyBatis` `MySQL` `Vue 3` `WebSocket/STOMP` `Docker`
-
-2인 캡스톤으로 시작해 혼자 추가 개발했습니다. 동시 편집 충돌 방지와 실시간 협업을 맡았습니다.
-
-- 같은 일정을 동시에 고치면 버전 번호로 충돌을 알립니다(낙관적 락).
-- 같은 시간·같은 순서 자리에 일정이 동시에 들어가지 않도록 여행 단위로 락을 겁니다(`FOR UPDATE`).
-- 변경 알림, 외부 API 호출, 파일 삭제는 저장이 끝난 뒤로 미뤘습니다.
-- 한계: 실제 동시 요청으로는 아직 검증하지 못했습니다.
-
-### [tichu-trainer](https://github.com/DreamingGenie/tichu-trainer) — 보드게임 티츄 규칙을 직접 해 보며 익히는 학습 웹
-
-`바닐라 JS(ES 모듈)` `빌드 없음` `외부 라이브러리 0`
-
-혼자 만든 저장소입니다. 설치 없이 `node tests/run.js` 한 줄로 테스트 85개를 돌려 볼 수 있습니다.
-
-- 규칙 판정 코드는 화면 코드를 부르지 않아서 퀴즈·미니 게임판·샌드박스의 판정이 어긋나지 않습니다.
-- 강의 본문에 적은 카드 이름이 실제 카드인지까지 테스트합니다.
-
-### [ServerTimeClicker](https://github.com/DreamingGenie/ServerTimeClicker) — 서버 시각에 맞춰 순서대로 클릭하는 데스크톱 앱
-
-`Java 21` `JavaFX` `jpackage`
-
-서버가 초 단위로만 알려 주는 시각을 밀리초 단위까지 좁혀 맞춥니다.
-
-- 초가 바뀌는 순간, 그 앞뒤 요청의 중간 시점을 서버의 초 경계로 봅니다.
-- 여러 번 클릭할 때는 처음 정한 목표 시각을 기준으로 계산해 오차가 쌓이지 않습니다.
-
-### 팀 프로젝트
-
-- **[BEEZ](https://github.com/S15A108/BEEZ)** (6명, 2026.10 ~ 11) — 팀원이 각자 AI 코딩 에이전트로 개발해도 팀이 승인한 설계를 기준으로 일하게 돕는 협업 서비스. 서버 운영(PR 필수 검사·dev 자동 배포·관측·백업)과 계정·팀 API, 에이전트가 들어오는 MCP 진입점을 맡았고, 팀원 PR 103개를 리뷰했습니다.
-- **[CoMeetTool](https://github.com/DreamingGenie/Comeettool)** (7명, 27일, 교육기관 GitLab에서 개발해 옮긴 저장소) — AI 회의 도우미. 팀 합의로 PM 겸 통합 담당을 맡아 develop에 합친 95건 중 83건과 main 머지 10건 전부(그중 배포 9건)를 처리했고, 팀 공간·일정 기능과 공통 응답 틀을 만들었습니다.
-- **[Pickage](https://github.com/DreamingGenie/Pickage)** (6명, 2026.08 ~ 10, 운영 종료, 교육기관 GitLab에서 개발해 옮긴 저장소) — npm 패키지 후보를 생태계 변화·기능·커뮤니티 세 관점으로 비교하는 서비스. 개인 결제 계정으로 500TB가 넘는 BigQuery 데이터를 다뤄야 해서, 상한을 넘으면 멈추는 수집기를 만들었습니다. 236번 실행해 보니 예상과 실제 청구량 차이가 0.1%였습니다.
-
----
-
-## 학습 기록
-
-- **[BJ](https://github.com/DreamingGenie/BJ)** — 백준 풀이 모음입니다.
-
----
-
-## Tech Stack
-
-**Backend**
-
-![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-59666C?style=flat-square)
-![MyBatis](https://img.shields.io/badge/MyBatis-C74634?style=flat-square)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-
-**Data**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![BigQuery](https://img.shields.io/badge/BigQuery-669DF6?style=flat-square&logo=googlebigquery&logoColor=white)
-![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
-![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white)
-
-**Infra**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
-![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-
-**Frontend · 기타**
-
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-
----
+| 깊이 | 기술 |
+|---|---|
+| 설계 이유까지 설명할 수 있는 것 | Java 21 · Spring Boot · Spring Data JPA · MyBatis · PostgreSQL · Python · BigQuery · Git 브랜치 운영 |
+| 써 본 것 | MySQL · Spring Security · Vue 3 · JavaScript · Docker · AWS EC2 · Nginx · GitHub Actions · Jenkins · Prometheus · GCS · DuckDB · MinIO · Redis · k6 |
 
 ## 알고리즘
 
 **solved.ac Platinum V · rating 1,600 · 279문제 · Class 5**
 
-[![solved.ac](https://mazassumnida.wtf/api/v2/generate_badge?boj=yusengha)](https://solved.ac/profile/yusengha)
+[solved.ac 프로필](https://solved.ac/profile/yusengha) · 백준 풀이는 [BJ](https://github.com/DreamingGenie/BJ) 저장소에 모아 두었습니다.
 
----
-
-## Experience
+## 이력
 
 | 기간 | 소속 | 비고 |
 |---|---|---|
 | 2026.01 ~ | 삼성청년SW·AI아카데미(SSAFY) 15기 | Java 트랙 |
 | 2024.07 ~ 2024.12 | 파워오토로보틱스 | 백엔드·데이터 현장실습(학교 현장실습 6개월) |
-
-**자격**
 
 | 자격 | 취득 | 발급 기관 |
 |---|---|---|
@@ -127,9 +107,7 @@ SSAFY 15기 Java 트랙 · 2026 하반기 신입 백엔드 지원 중
 | SQL 개발자(SQLD) | 2026.03 | 한국데이터산업진흥원 |
 | 한국사능력검정 1급 | 2019.11 | 국사편찬위원회 |
 
----
-
-## Contact
+## 연락
 
 - **dreaminggenie@naver.com** (대표 · 개발·업무용)
 - dreaminggenie0704@gmail.com
